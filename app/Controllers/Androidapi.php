@@ -43,6 +43,11 @@ class Androidapi extends BaseController
 			'idUser' => $idUser,
 			'kataSandi' => $kataSandi
 		);
+		// print_r($this->request);
+		// print_r('post:');
+		// print_r($this->request->getPost());
+		// print_r($where);
+		// print_r($this->userModel->findAll());
 		$userCount = $this->userModel->where($where)->countAllResults();
 		if ($userCount == 1) {
 			$where = array('idUser' => $idUser);
