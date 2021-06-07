@@ -1,3 +1,34 @@
+# Botón De Pánico
+
+Este es un webapp hecho en codeigniter 4 para la administración de alertas SOS.
+
+# Requisitos
+
+## Extensiones de PHP
+
+- [intl](http://php.net/manual/en/intl.requirements.php)
+- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+- json (enabled by default - don't turn it off)
+- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
+- xml (enabled by default - don't turn it off)
+
+## Otros
+
+- composer 
+
+# Como Usar en XAMPP/LAMP/WAMP
+
+- Copiar la carpeta en htdocs el proyecto
+- En el archivo **app/Config/App.php** cambiar la url base en este formato: *host/carpeta_proyecto*.
+- En el archivo **app/Config/Database.php** cambiar las configuraciones de la base según que corresponda.
+- Copiar el contenido del archivo **DATABASE.sql** para generar las tablas correspondientes.
+
+# Problemas con las rutas
+
+En el proyecto inicial se usa una configuración de REQUEST_URI junto con archivos .htaccess para reescribir el ruteo. Actualmente se ha cambiado la configuración, por lo que la carpeta assets e index.php se han desplazado a la raíz del proyecto. Para mayor seguridad en el servidor, se debe cambiar esta configuración a la inicial.
+
+
 # CodeIgniter 4 Application Starter
 
 ## What is CodeIgniter?
