@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title id="judul_halaman"></title>
+		<title id="BahnLink"></title>
 		<!-- Tell the browser to be responsive to screen width -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="<?php echo base_url(); ?>/assets/dist/img/PanicButtonLogo.png">
@@ -51,11 +51,11 @@
 					</a>
 					<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
 						<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal-change-password">
-							<i class="fa fa-edit mr-2"></i> Ubah Kata Sandi
+							<i class="fa fa-edit mr-2"></i> Cambiar la contraseña
 						</a>
 						<div class="dropdown-divider"></div>
 						<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal-logout">
-							<i class="fas fa-sign-out-alt mr-2"></i> Log Out
+							<i class="fas fa-sign-out-alt mr-2"></i> Salir
 						</a>
 					</div>
 				</li>
@@ -70,7 +70,7 @@
 				alt="AdminLTE Logo"
 				class="brand-image img-circle elevation-3"
 				style="opacity: .8">
-			<span class="brand-text font-weight-light">RS Panic Button</span>
+			<span class="brand-text font-weight-light">Gestión Botón Panico</span>
 			</a>
 			<!-- Sidebar -->
 			<div class="sidebar">
@@ -88,12 +88,12 @@
 					<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 						<!-- Add icons to the links using the .nav-icon class
 							with font-awesome or any other icon font library -->
-						<li class="nav-header">MENU UTAMA</li>
+						<li class="nav-header">MENU PRINCIPAL</li>
 						<li class="nav-item">
 							<a href="<?php echo base_url(); ?>/alarm" class="nav-link">
 								<i class="nav-icon fas fa-bell"></i>
 								<p>
-									Alarm
+									Alarma
 								</p>
 								<p id="jumlah_alarm_sidebar">
 								</p>
@@ -103,7 +103,7 @@
 							<a href="<?php echo base_url(); ?>/datapelapor" class="nav-link">
 								<i class="nav-icon fas fa-users"></i>
 								<p>
-									Data Pelapor
+									Informe Datos
 								</p>
 							</a>
 						</li>
@@ -111,7 +111,7 @@
 							<a href="<?php echo base_url(); ?>/pesanlaporan" class="nav-link">
 								<i class="nav-icon fas fa-comments"></i>
 								<p>
-									Pesan Laporan
+									Mensaje de informe	
 								</p>
 								<p id="jumlah_pesan_sidebar">
 								</p>
@@ -121,16 +121,16 @@
 							<a href="<?php echo base_url(); ?>/logalarm" class="nav-link">
 								<i class="nav-icon fas fa-clipboard"></i>
 								<p>
-									Log Alarm
+									Log Alarmas
 								</p>
 							</a>
 						</li>
-						<li class="nav-header">MENU LAINNYA</li>
+						<li class="nav-header">MENU</li>
 						<li class="nav-item">
 							<a href="<?php echo base_url(); ?>/notifikasitelegram" class="nav-link">
 								<i class="nav-icon fab fa-telegram"></i>
 								<p>
-									Notifikasi Telegram
+								Notificaciones de Telegram
 								</p>
 							</a>
 						</li>
@@ -146,7 +146,7 @@
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h4 class="modal-title">Ubah Kata Sandi
+						<h4 class="modal-title">Cambiar la contraseña
 						</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;
@@ -157,27 +157,27 @@
 						<input type="hidden" name="idAdmin" value="admin">
 						<div class="card-body">
 							<div class="form-group row">
-								<label for="kataSandiLama" class="col-sm-2 control-label">Kata Sandi Lama</label>
+								<label for="kataSandiLama" class="col-sm-2 control-label">Contraseña anterior</label>
 								<div class="col-sm-10">
 									<input type="password" id="kataSandiLama" name="kataSandiLama" class="form-control" required>
 								</div>
 							</div>
 							<div class="form-group row">
-								<label for="kataSandi" class="col-sm-2 control-label">Kata Sandi Baru</label>
+								<label for="kataSandi" class="col-sm-2 control-label">Nueva contraseña</label>
 								<div class="col-sm-10">
 									<input type="password" id="kataSandi" name="kataSandi" class="form-control" required>
 								</div>
 							</div>
 							<div class="form-group row">
-								<label for="konfirmasiKataSandi" class="col-sm-2 control-label">Ulangi Kata Sandi</label>
+								<label for="konfirmasiKataSandi" class="col-sm-2 control-label">Confirmar contraseña</label>
 								<div class="col-sm-10">
 									<input type="password" id="konfirmasiKataSandi" name="konfirmasiKataSandi" class="form-control" required>
 								</div>
 							</div>
 						</div>
 						<div class="modal-footer justify-content-between">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
-							<button type="submit" class="btn btn-primary bg-green">Simpan</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+							<button type="submit" class="btn btn-primary bg-green">Aceptar</button>
 						</div>
 					</form>
 				</div>
@@ -188,18 +188,18 @@
 			<div class="modal-dialog modal-default">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h4 class="modal-title">Konfirmasi Log Out</h4>
+						<h4 class="modal-title">Confirmando Salida</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<p>Anda yakin ingin log out?</p>
+						<p>Desea Salir ?</p>
 						<input type="text" class="form-control" id="idUser" name="idUser" hidden>
 					</div>
 					<div class="modal-footer justify-content-between">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
-						<a href="<?php echo base_url(); ?>/login/logout" class="btn bg-green">Oke</a>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+						<a href="<?php echo base_url(); ?>/login/logout" class="btn bg-green">Aceptar</a>
 					</div>
 				</div>
 				<!-- /.modal-content -->

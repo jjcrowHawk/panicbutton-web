@@ -5,7 +5,7 @@
 		<div class="container-fluid">
 			<div class="row mb-2">
 				<div class="col-sm-6">
-					<h1>Alarm</h1>
+					<h1>Alarma</h1>
 				</div>
 			</div>
 		</div>
@@ -18,7 +18,7 @@
 				<div class="col-md-12">
 					<div class="card">
 						<div class="card-header bg-green">
-							<h3 class="card-title">Live Alarm</h3>
+							<h3 class="card-title">Alarma en Vivo</h3>
 						</div>
 						<!-- /.card-header -->
 						<div id="tabel_alarm" class="card-body p-0">

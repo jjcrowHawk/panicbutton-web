@@ -5,7 +5,7 @@
 		<div class="container-fluid">
 			<div class="row mb-2">
 				<div class="col-sm-6">
-					<h1>Data Pelapor</h1>
+					<h1>Informe de datos</h1>
 				</div>
 			</div>
 		</div>
@@ -18,17 +18,17 @@
 				<div class="col-md-12">
 					<div class="card">
 						<div class="card-header bg-green">
-							<h3 class="card-title">Tabel Data Pelapor</h3>
+							<h3 class="card-title">Tabla de informe de datos</h3>
 						</div>
 						<div class="card-body">
 							<table id="example1" class="table table-striped">
 								<thead>
 									<tr>
 										<th style="width: 10px">No</th>
-										<th>Nama Pelapor</th>
+										<th>Nombre</th>
 										<th>ID User</th>
 										<th>No HP</th>
-										<th>Aksi</th>
+										<th>Acción</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -70,14 +70,14 @@
 				<form action="<?php echo base_url(); ?>/datapelapor/edit" method="post">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h4 class="modal-title">Edit Data Pelapor</h4>
+							<h4 class="modal-title">Edición de datos</h4>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
 						<div class="modal-body">
 							<div class="form-group row">
-								<label for="namaUser" class="col-sm-2 col-form-label">Nama Pelapor</label>
+								<label for="namaUser" class="col-sm-2 col-form-label">Nombre</label>
 								<div class="col-sm-10">
 									<input type="text" class="form-control" id="namaUser" name="namaUser" value="<?php echo $pelapor->namaUser; ?>" required>
 								</div>
@@ -97,8 +97,8 @@
 							</div>
 						</div>
 						<div class="modal-footer justify-content-between">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
-							<button type="submit" class="btn bg-green">Simpan</button>
+							<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+							<button type="submit" class="btn bg-green">Aceptar</button>
 						</div>
 					</div>
 					<!-- /.modal-content -->
@@ -111,18 +111,18 @@
 			<div class="modal-dialog modal-default">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h4 class="modal-title">Konfirmasi Hapus Data Pelapor</h4>
+						<h4 class="modal-title">Confirmar la eliminación de datos</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<p>Anda yakin ingin menghapus data pelapor?</p>
+						<p>Está seguro de que desea eliminar los datos del denunciante?</p>
 						<input type="text" class="form-control" id="idUser" name="idUser" hidden>
 					</div>
 					<div class="modal-footer justify-content-between">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
-						<a href="<?php echo base_url(); ?>/datapelapor/delete/<?php echo $pelapor->idUser; ?>" class="btn bg-green">Oke</a>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+						<a href="<?php echo base_url(); ?>/datapelapor/delete/<?php echo $pelapor->idUser; ?>" class="btn bg-green">Ok</a>
 					</div>
 				</div>
 				<!-- /.modal-content -->
