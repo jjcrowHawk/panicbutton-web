@@ -26,11 +26,11 @@ class Androidapi extends BaseController
 				);
 			$this->userModel->insert($data);
 			$response["value"] = 1;
-			$response["message"] = "Registrasi Berhasil";
+			$response["message"] = "Registro exitoso";
 			echo json_encode($response);
 		} else {
 			$response["value"] = 0;
-			$response["message"] = "Registrasi Gagal. Silakan masukkan ID User lainnya.";
+			$response["message"] = "Registro fallido. Al parecer el usuario ya existe, ingrese otro usuario.";
 			echo json_encode($response);
 		}
 	}
@@ -54,11 +54,11 @@ class Androidapi extends BaseController
 			$data = array('statusLogin' => 'Logged In');
 			$this->userModel->where($where)->set($data)->update();
 			$response["value"] = 1;
-			$response["message"] = "Login Berhasil";
+			$response["message"] = "Inicio de sesión exitoso.";
 			echo json_encode($response);
 		} else {
 			$response["value"] = 0;
-			$response["message"] = "Login Gagal";
+			$response["message"] = "Error al iniciar sesión";
 			echo json_encode($response);
 		}
 	}
@@ -86,7 +86,7 @@ class Androidapi extends BaseController
 		$this->alarmModel->insert($data);
 		$where = array('idUser' => $idUser);
 		$dataUser = $this->userModel->where($where)->first();
-		$messageText = "<b>Update Alarm Terbaru</b>\n\nKeluhan : ".$jenis."\nNama Pelapor : ".$dataUser->namaUser."\nNomor HP Pelapor : ".$dataUser->noHP."\nWaktu : ".$waktu."\n\nInformasi lebih lengkap dapat diakses di Web Admin Panic Button.";
+		$messageText = "<b>Últimas actualizaciones de alarmas</b>\n\Alerta : ".$jenis."\nNombre del alertante: ".$dataUser->namaUser."\nNúmero de teléfono : ".$dataUser->noHP."\nHora : ".$waktu."\n\nPuede obtener más información en el administrador Web.";
 		$url = ""; //Telegram Bot API
 		$url = $url . "&text=" . urlencode($messageText);
 		$ch = curl_init();
@@ -121,7 +121,7 @@ class Androidapi extends BaseController
 		$dataUser = $this->userModel->where($where)->first();
 		$where2 = array('idAlarm' => $idAlarm);
 		$dataAlarm = $this->alarmModel->where($where2)->first();
-		$messageText = "<b>Update Pesan Terbaru</b>\n\nPesan : ".$pesan."\nNama Pelapor : ".$dataUser->namaUser."\nKeluhan : ".$dataAlarm->jenis."\nWaktu : ".$waktu."\n\nInformasi lebih lengkap dapat diakses di Web Admin Panic Button.";
+		$messageText = "<b>Últimas actualizaciones de mensajes</b>\n\nMensaje : ".$pesan."\nNombre del alertante: ".$dataUser->namaUser."\nAlerta: ".$dataAlarm->jenis."\nHora : ".$waktu."\n\nPuede obtener más información en el administrador Web.";
 		$url = ""; //Telegram Bot API
 		$url = $url . "&text=" . urlencode($messageText);
 		$ch = curl_init();
@@ -146,7 +146,7 @@ class Androidapi extends BaseController
 		$alarmCount = $this->alarmModel->where($where)->countAllResults();
 		if ($alarmCount == 1) {
 			$response["value"] = 1;
-			$response["message"] = "Pertolongan telah dikonfirmasi.";
+			$response["message"] = "Se ha confirmado la atención";
 			echo json_encode($response);
 		} else {
 			$response["value"] = 0;
@@ -201,11 +201,11 @@ class Androidapi extends BaseController
 			$where2 = array('idUser' => $idUserOld);
 			$this->userModel->where($where2)->set($data)->update();
 			$response["value"] = 1;
-			$response["message"] = "Berhasil menyimpan profil.";
+			$response["message"] = "Perfil guardado con éxito";
 			echo json_encode($response);
 		} else {
 			$response["value"] = 0;
-			$response["message"] = "Gagal menyimpan profil. Silakan masukkan ID User lainnya.";
+			$response["message"] = "No se pudo guardar la información del perfil. Ingrese otro usuario.";
 			echo json_encode($response);
 		}
 	}
@@ -224,16 +224,16 @@ class Androidapi extends BaseController
 				$data = array('kataSandi' => $kataSandi);
 				$this->userModel->where($where2)->set($data)->update();
 				$response["value"] = 1;
-				$response["message"] = "Berhasil menyimpan password.";
+				$response["message"] = "Contraseña guardada exitosamente.";
 				echo json_encode($response);
 			} else {
 				$response["value"] = 0;
-				$response["message"] = "Gagal menyimpan password. Password lama salah.";
+				$response["message"] = "No se pudo guardar la contraseña. Contraseña antigua incorrecta.";
 				echo json_encode($response);
 			}
 		} else {
 			$response["value"] = 0;
-			$response["message"] = "Gagal menyimpan password. Profil tidak tersedia.";
+			$response["message"] = "No se pudo guardar la contraseña. Perfil no disponible.";
 			echo json_encode($response);
 		}
 	}

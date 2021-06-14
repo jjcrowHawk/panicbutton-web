@@ -56,7 +56,7 @@ class Pesanlaporan extends BaseController
 		}
 		$where = array('idPesanKhusus' => $idPesanKhusus);
 		$this->pesanKhususModel->where($where)->delete();
-		$this->session->setFlashdata('success','Berhasil menghapus.');
+		$this->session->setFlashdata('success','Eliminado con éxito.');
 		return redirect()->back();
 	}
 

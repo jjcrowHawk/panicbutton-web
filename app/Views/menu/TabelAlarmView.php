@@ -2,12 +2,12 @@
 	<thead>
 		<tr>
 			<th style="width: 10px">No</th>
-			<th>Jenis Laporan</th>
-			<th>Nama Pelapor</th>
-			<th>No HP</th>
-			<th>Koordinat (Lat/Lon)</th>
-			<th>Waktu Laporan</th>
-			<th>Aksi</th>
+			<th>Tipo de Informe</th>
+			<th>Nombre del Alarmante</th>
+			<th>Número de Teléfono</th>
+			<th>Coordenadas (Lat/Lon)</th>
+			<th>Hora de Informe</th>
+			<th>Acción</th>
 		</tr>
 	</thead>
 	<tbody>

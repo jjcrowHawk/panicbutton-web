@@ -27,7 +27,7 @@ class Datapelapor extends BaseController
 		);
 		$where = array('idUser' => $idUser);
 		$this->userModel->where($where)->set($data)->update();
-		$this->session->setFlashdata('success','Berhasil mengubah data.');
+		$this->session->setFlashdata('success','Datos modificados con éxito.');
 		return redirect()->back();
     }
     
@@ -43,14 +43,14 @@ class Datapelapor extends BaseController
 		if ($data['dataUser']->statusLogin != "Logged In") {
 			if ($dataAlarmCount == 0 && $dataPesanKhususCount == 0) {
 				$this->userModel->where($where)->delete();
-				$this->session->setFlashdata('success','Berhasil menghapus data.');
+				$this->session->setFlashdata('success','Datos eliminados con éxito.');
 				return redirect()->back();
 			} else {
-				$this->session->setFlashdata('error','Gagal menghapus data.');
+				$this->session->setFlashdata('error','No se pudieron borrar los datos.');
 				return redirect()->back();
 			}
 		} else {
-			$this->session->setFlashdata('error','Gagal menghapus data. Pelapor/user sedang login.');
+			$this->session->setFlashdata('error','No se pudieron borrar los datos. El reportero / usuario ha iniciado sesión.');
 			return redirect()->back();
 		}
 	}

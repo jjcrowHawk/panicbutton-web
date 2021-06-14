@@ -27,7 +27,7 @@ class Login extends BaseController
 			$this->session->set($sessionData);
 			return redirect()->to(base_url().'/alarm');
 		} else {
-			$this->session->setFlashdata('error', 'Login gagal. ID Admin atau kata sandi salah!');
+			$this->session->setFlashdata('error', 'Las credenciales ingresadas no son correctas o no existen');
 			return redirect()->to(base_url().'/login');
 		}
     }
@@ -50,14 +50,14 @@ class Login extends BaseController
 			if ($kataSandi == $konfirmasiKataSandi) {
 				$data = array('kataSandi' => $kataSandi);
 				$this->adminModel->where($where)->set($data)->update();
-				$this->session->setFlashdata('success', 'Berhasil mengubah kata sandi.');
+				$this->session->setFlashdata('success', 'Contraseña cambiada con éxito.');
 				return redirect()->back();
 			} else {
-				$this->session->setFlashdata('error', 'Ubah kata sandi gagal. Silakan periksa kata sandi baru.');
+				$this->session->setFlashdata('error', 'No se pudo cambiar la contraseña. Compruebe la nueva contraseña.');
 				return redirect()->back();
 			}
 		} else {
-			$this->session->setFlashdata('error', 'Ubah kata sandi gagal. Silakan periksa kata sandi lama.');
+			$this->session->setFlashdata('error', 'No se pudo cambiar la contraseña. Compruebe la contraseña anterior.');
 			return redirect()->back();
 		}
 	}

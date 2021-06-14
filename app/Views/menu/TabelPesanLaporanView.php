@@ -2,12 +2,12 @@
 	<thead>
 		<tr>
 			<th style="width: 10px">No</th>
-			<th>Pesan</th>
-			<th>Pelapor</th>
-			<th>No HP</th>
-			<th>Jenis Laporan</th>
-			<th>Waktu</th>
-			<th>Aksi</th>
+			<th>Mensaje</th>
+			<th>Alarmante</th>
+			<th>Número de Teléfono</th>
+			<th>Tipo de Informe</th>
+			<th>Hora</th>
+			<th>Acción</th>
 		</tr>
 	</thead>
 	<tbody>

@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Laporan Log Alarm Panic Button</title>
+    <title>BeSafe - Log de Alarmas</title>
     <style>
         p {
             font-family: Arial, Helvetica, sans-serif;
@@ -37,19 +37,19 @@
 
 <body class="A4">
     <section class="sheet padding-10mm">
-        <h1>LAPORAN LOG ALARM PANIC BUTTON</h1>
+        <h1>Informe de Registro de Alarmas - BeSafe </h1>
         <br>
-        <p>Waktu Laporan Dicetak : <?= date('d/m/Y H:i:s'); ?></p>
+        <p>Fecha de Generación : <?= date('d/m/Y H:i:s'); ?></p>
         <table class="table">
             <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Jenis Laporan</th>
-					<th>Pelapor</th>
-					<th>No HP</th>
-					<th>Koordinat (Lat/Lon)</th>
-					<th>Waktu Laporan</th>
-					<th>Status</th>
+                    <th>Tipo de Informe</th>
+					<th>Alertante</th>
+					<th>Número de Teléfono</th>
+					<th>Coordenadas (Lat/Lon)</th>
+					<th>Hora del informe</th>
+					<th>Estado</th>
                 </tr>
             </thead>
             <tbody>

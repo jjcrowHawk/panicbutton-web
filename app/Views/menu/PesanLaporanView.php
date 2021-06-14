@@ -5,7 +5,7 @@
 		<div class="container-fluid">
 			<div class="row mb-2">
 				<div class="col-sm-6">
-					<h1>Pesan Laporan</h1>
+					<h1>Mensajes de Alarmantes</h1>
 				</div>
 			</div>
 		</div>
@@ -18,7 +18,7 @@
 				<div class="col-md-12">
 					<div class="card">
 						<div class="card-header bg-green">
-							<h3 class="card-title">Tabel Pesan Laporan</h3>
+							<h3 class="card-title">Tabla de Mensajes</h3>
 						</div>
 						<div id="tabel_pesan" class="card-body">
 						</div>

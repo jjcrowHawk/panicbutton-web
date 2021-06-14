@@ -26,7 +26,7 @@ class Logalarm extends BaseController
 								->orderBy('alarm.waktu', 'desc')
 								->findAll();
 
-		$fileName = 'laporan-log-alarm-'.date('YmdHis');
+		$fileName = 'informe-registro-alarma'.date('YmdHis');
 		$html = view('LaporanView', $data);
 		$this->pdfGenerator->generate($html, $fileName, TRUE, 'A4', 'potrait');
 	}

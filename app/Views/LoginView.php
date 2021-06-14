@@ -21,12 +21,12 @@
 	<body class="hold-transition login-page">
 		<div class="login-box">
 			<div class="login-logo">
-				<a href="<?php echo base_url(); ?>/login"><b>RS</b> Panic Button</a>
+				<a href="<?php echo base_url(); ?>/login"><b>Be Safe</b> by Bahn Link</a>
 			</div>
 			<!-- /.login-logo -->
 			<div class="card">
 				<div class="card-body login-card-body">
-					<p class="login-box-msg">Silakan login untuk melanjutkan</p>
+					<p class="login-box-msg">Por favor inicie sesión para continuar</p>
 					<script src="<?php echo base_url(); ?>/assets/plugins/sweetalert/sweetalert.all.js"></script>
 					<script>
 						<?php
@@ -44,7 +44,7 @@
 					</script>
 					<form action="<?php echo base_url(); ?>/login/auth" method="post">
 						<div class="input-group mb-3">
-							<input type="text" class="form-control" placeholder="ID Admin" name="idAdmin" value="admin" required>
+							<input type="text" class="form-control" placeholder="Usuario" name="idAdmin" value="admin" required>
 							<div class="input-group-append">
 								<div class="input-group-text">
 									<span class="fas fa-user"></span>
@@ -52,7 +52,7 @@
 							</div>
 						</div>
 						<div class="input-group mb-3">
-							<input type="password" class="form-control" placeholder="Kata Sandi" name="kataSandi" required>
+							<input type="password" class="form-control" placeholder="Contraseña" name="kataSandi" required>
 							<div class="input-group-append">
 								<div class="input-group-text">
 									<span class="fas fa-lock"></span>
@@ -61,7 +61,7 @@
 						</div>
 						<div class="row">
 							<div class="col-12">
-								<button type="submit" class="btn bg-green btn-block">Log In</button>
+								<button type="submit" class="btn bg-green btn-block">Iniciar Sesión</button>
 							</div>
 							<!-- /.col -->
 						</div>

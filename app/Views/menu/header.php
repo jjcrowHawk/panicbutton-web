@@ -47,11 +47,11 @@
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						<span class="hidden-xs">Administrator</span>
+						<span class="hidden-xs">Administrador</span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
 						<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal-change-password">
-							<i class="fa fa-edit mr-2"></i> Cambiar la contraseña
+							<i class="fa fa-edit mr-2"></i> Cambiar Contraseña
 						</a>
 						<div class="dropdown-divider"></div>
 						<a href="#" class="dropdown-item" data-toggle="modal" data-target="#modal-logout">
@@ -70,7 +70,7 @@
 				alt="AdminLTE Logo"
 				class="brand-image img-circle elevation-3"
 				style="opacity: .8">
-			<span class="brand-text font-weight-light">Gestión Botón Panico</span>
+			<span class="brand-text font-weight-light">BeSafe - Administrador</span>
 			</a>
 			<!-- Sidebar -->
 			<div class="sidebar">
@@ -80,7 +80,7 @@
 						<img src="<?php echo base_url(); ?>/assets/dist/img/admin.jpg" class="img-circle elevation-2" alt="User Image">
 					</div>
 					<div class="info">
-						<a href="#" class="d-block">Administrator</a>
+						<a href="#" class="d-block">Administrador</a>
 					</div>
 				</div>
 				<!-- Sidebar Menu -->
@@ -88,12 +88,12 @@
 					<ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 						<!-- Add icons to the links using the .nav-icon class
 							with font-awesome or any other icon font library -->
-						<li class="nav-header">MENU PRINCIPAL</li>
+						<li class="nav-header">MENÚ PRINCIPAL</li>
 						<li class="nav-item">
 							<a href="<?php echo base_url(); ?>/alarm" class="nav-link">
 								<i class="nav-icon fas fa-bell"></i>
 								<p>
-									Alarma
+									Alarmas
 								</p>
 								<p id="jumlah_alarm_sidebar">
 								</p>
@@ -103,7 +103,7 @@
 							<a href="<?php echo base_url(); ?>/datapelapor" class="nav-link">
 								<i class="nav-icon fas fa-users"></i>
 								<p>
-									Informe Datos
+									Usuarios Alarmantes
 								</p>
 							</a>
 						</li>
@@ -111,7 +111,7 @@
 							<a href="<?php echo base_url(); ?>/pesanlaporan" class="nav-link">
 								<i class="nav-icon fas fa-comments"></i>
 								<p>
-									Mensaje de informe	
+									Mensajes de Alarmantes	
 								</p>
 								<p id="jumlah_pesan_sidebar">
 								</p>
@@ -121,7 +121,7 @@
 							<a href="<?php echo base_url(); ?>/logalarm" class="nav-link">
 								<i class="nav-icon fas fa-clipboard"></i>
 								<p>
-									Log Alarmas
+									Log de Alarmas
 								</p>
 							</a>
 						</li>
@@ -146,7 +146,7 @@
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h4 class="modal-title">Cambiar la contraseña
+						<h4 class="modal-title">Cambiar Contraseña
 						</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;
@@ -188,13 +188,13 @@
 			<div class="modal-dialog modal-default">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h4 class="modal-title">Confirmando Salida</h4>
+						<h4 class="modal-title">Confirmar Cierre de Sesión</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
 					<div class="modal-body">
-						<p>Desea Salir ?</p>
+						<p>¿Desea Salir?</p>
 						<input type="text" class="form-control" id="idUser" name="idUser" hidden>
 					</div>
 					<div class="modal-footer justify-content-between">

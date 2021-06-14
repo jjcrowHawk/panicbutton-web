@@ -5,7 +5,7 @@
 		<div class="container-fluid">
 			<div class="row mb-2">
 				<div class="col-sm-6">
-					<h1>Log Alarm</h1>
+					<h1>Log de Alarmas</h1>
 				</div>
 			</div>
 		</div>
@@ -18,23 +18,23 @@
 				<div class="col-md-12">
 					<div class="card">
 						<div class="card-header bg-green">
-							<h3 class="card-title">Tabel Log Alarm</h3>
+							<h3 class="card-title">Tabla de Log de Alarmas</h3>
 						</div>
 						<div class="card-body">
 							<a href="<?php echo base_url()?>/logalarm/laporan" class="btn btn-default bg-green" target="_blank">
-							Cetak Laporan Log Alarm
+							Imprimir Informe de Registro de Alarmas
 							</a>
 							<div class="card-body">
 								<table id="example1" class="table table-striped">
 									<thead>
 										<tr>
 											<th style="width: 10px">No</th>
-											<th>Jenis Laporan</th>
-											<th>Pelapor</th>
-											<th>No HP</th>
-											<th>Koordinat (Lat/Lon)</th>
-											<th>Waktu Laporan</th>
-											<th>Status</th>
+											<th>Tipo de Informe</th>
+											<th>Alarmante</th>
+											<th>Número de Teléfono</th>
+											<th>Coordenadas (Lat/Lon)</th>
+											<th>Hora de Informe</th>
+											<th>Estado</th>
 										</tr>
 									</thead>
 									<tbody>

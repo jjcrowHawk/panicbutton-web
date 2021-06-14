@@ -5,7 +5,7 @@
 		<div class="container-fluid">
 			<div class="row mb-2">
 				<div class="col-sm-6">
-					<h1>Informe de datos</h1>
+					<h1>Usuarios Alarmantes</h1>
 				</div>
 			</div>
 		</div>
@@ -18,16 +18,16 @@
 				<div class="col-md-12">
 					<div class="card">
 						<div class="card-header bg-green">
-							<h3 class="card-title">Tabla de informe de datos</h3>
+							<h3 class="card-title">Tabla de Usuarios</h3>
 						</div>
 						<div class="card-body">
 							<table id="example1" class="table table-striped">
 								<thead>
 									<tr>
-										<th style="width: 10px">No</th>
+										<th style="width: 10px">No.</th>
 										<th>Nombre</th>
-										<th>ID User</th>
-										<th>No HP</th>
+										<th>Usuario</th>
+										<th>Número de Teléfono</th>
 										<th>Acción</th>
 									</tr>
 								</thead>
@@ -77,20 +77,20 @@
 						</div>
 						<div class="modal-body">
 							<div class="form-group row">
-								<label for="namaUser" class="col-sm-2 col-form-label">Nombre</label>
+								<label for="namaUser" class="col-sm-2 col-form-label">Nombres</label>
 								<div class="col-sm-10">
 									<input type="text" class="form-control" id="namaUser" name="namaUser" value="<?php echo $pelapor->namaUser; ?>" required>
 								</div>
 							</div>
 							<div class="form-group row">
-								<label for="idUser" class="col-sm-2 col-form-label">ID User</label>
+								<label for="idUser" class="col-sm-2 col-form-label">Usuario</label>
 								<div class="col-sm-10">
 									<input type="text" class="form-control" id="idUser" name="idUser" value="<?php echo $pelapor->idUser; ?>" disabled>
 									<input type="hidden" class="form-control" id="idUser" name="idUser" value="<?php echo $pelapor->idUser; ?>">
 								</div>
 							</div>
 							<div class="form-group row">
-								<label for="noHP" class="col-sm-2 col-form-label">No HP</label>
+								<label for="noHP" class="col-sm-2 col-form-label">Teléfono</label>
 								<div class="col-sm-10">
 									<input type="number" class="form-control" id="noHP" name="noHP" value="<?php echo $pelapor->noHP; ?>" min="0" required>
 								</div>
@@ -117,7 +117,7 @@
 						</button>
 					</div>
 					<div class="modal-body">
-						<p>Está seguro de que desea eliminar los datos del denunciante?</p>
+						<p>¿Está seguro de que desea eliminar los datos del usuario?</p>
 						<input type="text" class="form-control" id="idUser" name="idUser" hidden>
 					</div>
 					<div class="modal-footer justify-content-between">

@@ -5,7 +5,7 @@
 		<div class="container-fluid">
 			<div class="row mb-2">
 				<div class="col-sm-6">
-					<h1>Notifikasi Telegram</h1>
+					<h1>Notificaciones de Telegram</h1>
 				</div>
 			</div>
 		</div>
@@ -18,11 +18,11 @@
 				<div class="col-md-12">
 					<div class="card">
 						<div class="card-header bg-green">
-							<h3 class="card-title">Notifikasi Channel Telegram Panic Button</h3>
+							<h3 class="card-title">Canal de Notificaciones de BeSafe</h3>
 						</div>
 						<div class="card-body">
-							Untuk mendapatkan notifikasi pasien yang menekan tombol pada aplikasi Panic Button, silakan membuat akun telegram dan subscribe ke channel : <a href="https://t.me/rspanicbuttonupdate" target="_blank">https://t.me/rspanicbuttonupdate</a>.<br><br>
-							Channel tersebut akan memberikan notifikasi secara real time setiap ada pasien yang menekan tombol pada aplikasi.
+							Para recibir una notificación de las personas que presionan el botón en la aplicación de botón de pánico, cree una cuenta de telegram y suscríbase al canal:<br><br> <a href="https://t.me/rspanicbuttonupdate" target="_blank"> https: // t.me/ rspanicbuttonupdate </a> <br> <br>
+							El canal proporcionará notificaciones en tiempo real cada vez que un usuario presione el botón de pánico en la aplicación.
 						</div>
 						<!-- /.card-body -->
 					</div>

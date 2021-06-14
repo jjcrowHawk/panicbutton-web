@@ -49,9 +49,9 @@ class Alarm extends BaseController
         $data['pesanCount']  = $this->pesanKhususModel->where($where)->countAllResults();
         $jumlahNotif = $data['alarmCount'] + $data['pesanCount'];
         if ($jumlahNotif > 0) {
-            echo "(".$jumlahNotif.") RS Panic Button";
+            echo "(".$jumlahNotif.") BeSafe by Bahn Link";
         } else {
-            echo "RS Panic Button";
+            echo "BeSafe by Bahn  Link";
         }
     }
 
@@ -63,7 +63,7 @@ class Alarm extends BaseController
         $data = array('statusAlarm' => 'Dikonfirmasi');
         $where = array('idAlarm' => $idAlarm);
         $this->alarmModel->where($where)->set($data)->update();
-        $this->session->setFlashdata('success', 'Berhasil mengkonfirmasi.');
+        $this->session->setFlashdata('success', 'Confirmado con éxito.');
         return redirect()->back();
     }
 
@@ -75,7 +75,7 @@ class Alarm extends BaseController
         $data = array('statusAlarm' => 'Ditolak');
         $where = array('idAlarm' => $idAlarm);
         $this->alarmModel->where($where)->set($data)->update();
-        $this->session->setFlashdata('success', 'Berhasil menolak.');
+        $this->session->setFlashdata('success', 'Rechazado con éxito.');
         return redirect()->back();
     }
 
